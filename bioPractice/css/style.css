@@ -1,0 +1,22 @@
+body {
+    color: #333333; 
+    font-size: 16px; 
+    padding: 30px;
+    text-align: center;
+} 
+
+.intro {
+    color:blueviolet; 
+    padding: 20px;
+} 
+
+.alert {
+    background: yellowgreen;
+    color: white; 
+    padding: 8px;
+} 
+
+.alert.orange-background {
+    background: orange; 
+    padding: 8px;
+}
