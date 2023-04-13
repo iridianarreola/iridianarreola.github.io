@@ -1,0 +1,25 @@
+header,footer {
+    background-color: dodgerblue;
+}
+
+p,
+ul,
+li {
+    font-size: 20px;
+} 
+
+a:link {
+    color:slateblue
+} 
+
+a:visited {
+     color: darkgray;
+} 
+
+a:hover {
+    color: yellow;
+} 
+
+a:active {
+    color:crimson
+}
