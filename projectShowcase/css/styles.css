@@ -1,0 +1,13 @@
+/* Iridian Arreola, April 19. 2023 */
+body {
+    background-color: aqua;
+}
+.proj {
+    text-align: center;
+}
+.footer{
+    background-color: white;
+    margin-right: 80%;
+    float: right;
+    
+}

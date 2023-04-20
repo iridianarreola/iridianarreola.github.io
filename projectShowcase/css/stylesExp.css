@@ -1,0 +1,39 @@
+.examples {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+.projectbox {
+    background: red;
+    border: 5px;
+    float: left;
+    margin: 10px;
+    width: 31%;
+}
+.projectbox h3 {
+    background: blue;
+    color: aliceblue;
+    padding: 2px;
+}
+.springsemester {
+    text-align: center;
+    color: aliceblue;
+    
+}
+.button {
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    background: white;
+    color: black;
+    border: 2px solid blue;
+    text-align: center;
+    border-radius: 15px;
+}
+.button:hover {
+    background-color: blue;
+}
+
+
+
