@@ -1,0 +1,56 @@
+.examples {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    
+    
+ }
+ 
+ .projectbox {
+     background:  rgb(240, 164, 236);;
+     border: 5px;
+     padding: 15px;
+     width: 20%; 
+     text-align: center;
+     
+    
+ }
+ .projectbox h3 {
+     background:  rgb(240, 164, 236);;
+     color: rgb(98, 93, 93);
+     padding: 2px;
+     text-align: center;
+     
+ }
+ .springsemester {
+     text-align: center;
+     color:  rgb(93, 91, 91);
+     background-color: white;
+     
+ }
+ .button {
+     display: block;
+     width: 50%;
+     margin: 10px auto;
+     background: white;
+     color: black;
+     border: 2px solid  rgb(240, 164, 236);;
+     text-align: center;
+     border-radius: 15px;
+ }
+ .button:hover {
+     background-color: grey;
+ }
+ 
+ table, th{
+     margin-left: auto;
+     margin-right: auto;
+     width: 40%;
+     height: 15%;
+     border-collapse: collapse;
+     border: 2px solid black;
+     text-align: center;
+ }
+ td {
+    text-align: left;
+ }
