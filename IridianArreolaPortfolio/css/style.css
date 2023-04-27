@@ -1,0 +1,76 @@
+/* Iridian Arreola
+ April 23, 2023 */
+
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../images/BlogBanner.png");
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 70%;
+    margin: auto;
+    padding: 1px 0;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+}
+
+.logo {
+    width: 105px;
+}
+.navbar ul li{
+    list-style-type: none;
+    display: inline;
+    float: right;
+    margin: 0 20px; 
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+} 
+
+.navbar ul li a:hover {
+    color: #dd7bf3;
+}
+
+.navbar ul li a:active {
+    background-color: #612c8a;
+}
+
+main {
+    width: 100%; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+main h1 {
+    font-size: 50px;
+    font-family: 'Yellowtail', cursive, 'Times New Roman';
+}
+
+main p {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: .98em;
+    text-align: center;
+    background-color: #f8e5fb;
+    width: 99%;
+    height: 80px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
