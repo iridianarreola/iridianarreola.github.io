@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+
+<!-- ****************************************************************************
+    Modification Log 
+
+    #original Author: Iridian Arreola
+    #Date Created: 09/01/2023
+    #Current Version: 
+    #Date Last Modified: 
+    #Last Modified by: Iridian Arreola
+    #Modification Log
+
+    Version 0.0 - 09/01/2023 - Modification Log, folder and index file created
+    version 0.1 9/02/2023 - linked style sheets,nav bar and logos created 
+    version 0.5 9/03/2023 - added pictures and css styles created
+    version 2.5 9/04/2023 - modified pictures 
+    version 3.0 9/05/2023 - added media query 
+    version 3.1 9/16/2023 - added a contact form and a faqs page.
+    
+
+
+**************************************************************************** -->
+<html lang="en"> 
+    <head>
+        <title>Landing Page</title>
+        <meta name="author" content="Iridian Arreola">
+        <meta charset="UTF-8">
+        <meta name="description" content="Iridian Arreola software app designer Boise Idaho">
+        <meta name="keywords" content="client-side server-side software developer programmer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/faqs.css"> 
+    </head>
+    <body> 
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html"><img src="images/heartLogosmall.png" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.instagram.com/lashedby_brittany/"><img src="images/instagram.png" class="insta"></a>
+            </div>
+            <main id="faqs" class="main">
+				<h1>FAQs</h1>
+				<h2><a href="#">What are lash extensions?</a></h2>
+				<div>
+					<p>Lash Extensions are a cosmetic enhancement attaching synthetic or natural fibers to the natural eyelashes.
+					</p>
+				</div>
+				<h2><a href="#">Will lash extensions damage my natural lashes?</a></h2>
+				<div>
+					<p>No, when applied properly by a professional , with perfect isolation and weight eyelash extensions will not harm your natural lashes.</p>
+				</div>
+				<h2><a href="#">What should I do before my lash appointment?</a></h2>
+				<div>
+					<ul>
+						<li>Thoroughly was your eyes with oil free face wash or eye makeup remover. </li>
+						<li>Do not wear any eye makeup.</li>
+						<li>Do not curl your lashes!</li>
+					</ul>
+				</div>
+				<h2><a href="#">Do you only do eyelash extensions?</a></h2>
+				<div>
+					<p>No, I do facials as well.</p>
+				</div>
+
+            </main>
+
+        <footer>
+            <div class="join">
+                <h3>Join The List</h3>
+            <form id="sign_up" name="sign_up" 
+                action="join.html" method="get">
+              <div class="footerEmail">
+                  <label for="email_1">Email Address:</label>
+                  <input type="text" id="email_1" name="email_1">
+                  <span>*</span>
+              </div>
+              <div class="centerBtn">
+                  <input type="button" id="join_list" value="Sign Up for newsletters">
+              </div>     
+          </form>
+            </div>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" ></script>
+        <script src="faqs.js"></script>
+        
+    </body> 
+  
+</html>

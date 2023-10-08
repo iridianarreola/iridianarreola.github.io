@@ -1,0 +1,47 @@
+
+.main {
+    font-size: 87.5%;
+    width: 550px;
+    margin: 0 auto;
+    border: 3px solid whitesmoke;
+    padding: 15px 25px;
+}
+.main h1 { 
+    font-size: 150%;
+    color: whitesmoke;
+}
+.main h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    background: url(../images/plusss.png) no-repeat left center;
+}
+.main h2.minus {
+    background: url(../images/minusss.png) no-repeat left center;
+}
+.main a {
+    color: whitesmoke;
+    text-decoration: none; 
+}
+.main a:focus, a:hover { 
+	color: burlywood; 
+}
+.main div {
+    display: none;
+}
+.main div.open {
+    display: block;
+}
+.main ul {
+    padding-left: 45px;
+
+}
+.main li {
+    padding-bottom: .25em;
+    color: bisque;
+}
+.main p {
+    padding-bottom: .25em;
+    padding-left: 25px; 
+    color: bisque;
+}

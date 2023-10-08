@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<!-- ****************************************************************************
+    Modification Log 
+
+    #original Author: Iridian Arreola
+    #Date Created: 09/01/2023
+    #Current Version: 
+    #Date Last Modified: 
+    #Last Modified by: Iridian Arreola
+    #Modification Log
+
+    Version 0.0 - 10/29/2023 - Added content to services page
+    version 0.1 - 10/29/2023 - 
+    
+
+
+**************************************************************************** -->
+<html lang="en"> 
+    <head>
+        <title>Landing Page</title>
+        <meta name="author" content="Iridian Arreola">
+        <meta charset="UTF-8">
+        <meta name="description" content="Iridian Arreola software app designer Boise Idaho">
+        <meta name="keywords" content="client-side server-side software developer programmer">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/carousel.css">
+    </head>
+    <body> 
+        <div class="container">
+            <div class="navbar">
+                <a href="index.html"><img src="images/heartLogosmall.png" class="logo"></a>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="faqs.html">FAQs</a></li>
+                    </ul>
+                </nav>
+                <a href="https://www.instagram.com/lashedby_brittany/"><img src="images/instagram.png" class="insta"></a>
+            </div>
+        </div> 
+        <main>
+            <h2>Lash extensions that are offered</h2>
+            <div id="carousel">
+                <div id="left_button" class="button_panel">
+                    <img src="images/leftA.png" alt="left arrow"> 
+                </div>
+                <div id="display_panel">
+                    <ul id="image_list">
+                        <li><a href="newpage.html"><img src="images/classic.png" alt=""></a></li>
+                        <li><a href="newpage.html"><img src="images/hybird.png" alt=""></a></li>
+                        <li><a href="newpage.html"><img src="images/volume.png" alt=""></a></li>
+                        <li><a href="newpage.html"><img src="images/megaVolume.png" alt=""></a></li>
+                    </ul>
+                </div>
+                <div id="right_button" class="button_panel">
+                    <img src="images/rightA.png" alt="right arrow">
+                </div>
+
+            </div>
+
+        </main>
+        <footer>
+            <div class="join">
+                <h3>Join The List</h3>
+            <form id="sign_up" name="sign_up" 
+                action="join.html" method="get">
+              <div class="footerEmail">
+                  <label for="email_1">Email Address:</label>
+                  <input type="text" id="email_1" name="email_1">
+                  <span>*</span>
+              </div>
+              <div class="centerBtn">
+                  <input type="button" id="join_list" value="Sign Up for newsletters">
+              </div>     
+          </form>
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        
+        <script src="carousel.js"></script>
+    </body> 
+  
+</html>
