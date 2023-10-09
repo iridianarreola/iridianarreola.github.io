@@ -1,0 +1,214 @@
+
+/*********************************************************************
+***Modification Log***
+
+*Original Author: Iridian Arreola                                   
+*Date Created: 9/02/2023                                   
+*Version:                                          
+*Date Last Modified: 9/5/2023                             
+*Modified by: Iridian Arreola                                         
+*Modification log:                   
+
+version 0.1 9/02/2023 - linked style sheets
+version 0.5 9/03/2023 - css styles created 
+version 1.5 9/04/2023 - css styles modified for pictures and headings 
+version 3.0 9/05/2023 - adjusted media query 
+version 3.1 9/17/2023 - added css for contact form,faqs and join lists
+version 3.5 9/29/2023 - added css for about.html
+version 3.5 9/29/2023 - added css for slideshow in about.html
+
+
+******************************************************************** */ 
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../images/Banner.png);  /* background banner from canva */
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.logo {
+    width: 190px;
+}
+ 
+.logo:hover {
+    transform: scale(1.5);
+}
+.insta {
+    width: 200px;
+    margin-left: 40px;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color:burlywood;
+}
+
+.writing {
+    display: flex;
+    height: 88%;
+    align-items: center;
+} 
+
+.col {
+    flex-basis: 50%;
+}
+
+
+.book {
+    color: whitesmoke; 
+    font-size: 50px;
+}
+
+.para {
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+button {
+    width: 200px;
+    color: #000;
+    font-size: 15px;
+    padding: 12px 0;
+    background: #fff;
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    margin-top: 30px;
+} 
+
+button:hover {
+    background-color: burlywood;
+}
+
+.pic {
+    width: 400px;
+    height: 230px;
+    display: inline-block; 
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    margin: 10px 15px;
+    background-position: center; 
+    background-size: cover; 
+    position: relative;
+
+}
+
+.pic1 {
+    background-image: url(../images/eyelash.png); 
+   
+
+} 
+
+.pic2 {
+    background-image: url(../images/face.png);
+} 
+
+.pic:hover {
+    transform: scale(1.6);
+} 
+
+footer {
+    background-color: rgb(248, 220, 225); /* Set your desired background color */
+    color: black; /* Set your desired text color */
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.join {
+    text-align: center;
+}
+
+/* Center the button within its container */
+.center-button {
+    text-align: center;
+}
+
+
+
+@media (max-width: 992px) { 
+    body {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .navbar {
+        height: auto; 
+        flex-direction: column; 
+        align-items: center; 
+        text-align: center;
+    } 
+
+    .logo {
+        width: 150px;
+        margin-bottom: 20px;
+    } 
+
+    .insta {
+        width: 150px;
+        margin-top: 20px; 
+        margin-left: 0;
+    } 
+    nav ul li {
+        margin: 10px; 
+    } 
+
+    .row {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    } 
+
+    .col {
+        flex-basis: 100%; 
+        text-align: center;
+    } 
+
+    button {
+        width: 100%;
+        margin-top: 20px;
+    } 
+
+    .card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+}
