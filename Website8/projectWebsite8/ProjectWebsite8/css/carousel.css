@@ -1,0 +1,50 @@
+#display_panel {
+    width: 100px;
+    overflow: hidden;
+    float: left;
+    height: 225px;
+} 
+
+#image_list {
+    position: relative;
+    left: 0px;
+    width: 400px;
+    list-style: none;
+} 
+
+#image_list li {
+    float: left;
+    width: 100px;
+    
+}
+
+#image_list li img {
+    width: 142px;
+} 
+
+.button_panel {
+    height: 125px;
+	padding: 50px 15px;
+	float: left;
+}
+
+.button_panel img {
+	width: 25px;
+	height: 25px;
+    
+} 
+
+h2{
+    color: whitesmoke;
+    padding: 50px 15px;
+} 
+
+.date {
+    color: whitesmoke;
+    float: right;
+} 
+
+.dateLabel {
+    float: right;
+} 
+

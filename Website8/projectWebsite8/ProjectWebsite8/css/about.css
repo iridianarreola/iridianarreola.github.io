@@ -1,0 +1,21 @@
+
+
+img {
+    width: 350px;
+    height: 266px;
+    top: 10px;
+    left: 10px;
+    
+}
+
+#slides img {
+    display: none;
+} 
+
+h2 {
+    color: bisque;
+} 
+
+.aboutMe {
+    float: right;
+}
