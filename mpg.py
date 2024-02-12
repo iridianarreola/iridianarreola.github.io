@@ -1,39 +1,66 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3 
 
-# display a welcome message
-print("The Miles Per Gallon program")
-print()
+import csv 
 
-another_trip = "y"
+FILENAME = "trips.csv"
 
-while another_trip == "y":
+def write_trips(trips):
+    with open(FILENAME, "w", newline="") as file:
+        writer = csv.writer(file)
+        writer.writerows(trips)
 
-    # get input from the user
-    miles_driven = float(input("Enter miles driven:         "))
-    gallons_used = float(input("Enter gallons of gas used:  "))
-    cost_per_gallon = float(input("Enter cost per gallon:      "))
+def read_trips():
+    trips = []
+    with open(FILENAME, "w", newline="") as file:
+        reader = csv.reader(file)
+        for row in reader:
+            trips.append(row)
+        return trips 
     
-    if miles_driven <= 0:
-        print("Miles driven must be greater than zero. Please try again.")
-    elif gallons_used <= 0:
-        print("Gallons used must be greater than zero. Please try again.")
-    elif cost_per_gallon <= 0:
-        print("Cost per gallon must be greater than zero. Please try again.")
-    else:
-        # calculate and display
-        mpg = round(miles_driven / gallons_used, 2)
-        total_gas_cost = round(gallons_used * cost_per_gallon, 1)
-        cost_per_mile = round(total_gas_cost / miles_driven, 1)
-        print()
-        print("Miles Per Gallon:          ", mpg)
-        print("Total Gas Cost:            ", total_gas_cost)
-        print("Cost Per Mile:             ", cost_per_mile)
-        print()
 
-    another_trip = input("Get entries for another trip (y/n)? ")
+def get_miles_driven():
+    while (miles_driven := float(input("Enter miles driven:\t"))) <= 0:                    
+        print("Entry must be greater than zero. Please try again.\n")       
+    return miles_driven
+          
+def get_gallons_used():
+    while (gallons_used := float(input("Enter gallons of gas:\t"))) <= 0:                    
+        print("Entry must be greater than zero. Please try again.\n")
+    return gallons_used  
+
+def list_trips(trips):
+    print ("Distance\tGallons\t\tMPG")
+    for i in range(0, len(trips)):
+        trip = trips[i] 
+        print(f"{trip[0]}\t\t{trip[1]}\t\t{trip[2]}")
+    print() 
+
+def main():
+    # display a welcome message
+    print("The Miles Per Gallon program")
     print()
 
-print("Bye!")
+    trips = read_trips()
+    list_trips(trips)
 
+    more = "y"
+    while more.lower() == "y":
+        miles_driven = get_miles_driven()
+        gallons_used = get_gallons_used()
+                                 
+        mpg = round((miles_driven / gallons_used), 2)
+        print(f"Miles Per Gallon:\t{mpg}")
+        print() 
 
+        trip = [miles_driven, gallons_used, mpg]
+        trips.append(trip)
+        write_trips(trips) 
+        list_trips(trips)
+        
+        more = input("More entries? (y or n): ")
+    
+    print("Bye!")
+
+if __name__ == "__main__":
+    main()
 
