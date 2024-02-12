@@ -1,25 +1,33 @@
 #!/usr/bin/env python3
+        
+def get_number(prompt, low, high):
+    while True:
+        try:
+            number = float(input(prompt))
+        except ValueError:
+            print("You entered an invalid number")
+            continue
+        if number > low and number <= high:
+            is_valid = True
+            return number
+        else:
+            print(f"Entry must be greater than {low} " 
+                  f"and less than or equal to {high}.")
+            
+def get_integer(prompt, low, high):
+    while True: 
+        try: 
+            number = int(input(prompt)) 
+        except ValueError:
+            print("You entered an invalid integer")
+            continue
+        if number > low and number <= high:
+            is_valid = True
+            return number
+        else:
+            print(f"Entry must be greater than {low} " 
+                  f"and less than or equal to {high}.")
 
-# def get_float(prompt, low, high):
-#    while True:
-#        number = float(input(prompt))
-#        if number > low and number <= high:
-#            is_valid = True
-#            return number
-#        else:
-#            print("Entry must be greater than", low,"and less than or equal to", high,"Please try again.")
-           
-# def get_int(prompt, low, high):
-#    while True:
-#        number = int(input(prompt))
-#        if number > low and number <= high:
-#            is_valid = True
-#            return number
-#        else:
-#            print("Entry must be greater than", low,"and less than or equal to", high,"Please try again.") 
-
-
-import validation as v 
 
 def calculate_future_value(monthly_investment, yearly_interest, years):
     # convert yearly values to monthly values
@@ -39,14 +47,15 @@ def main():
     choice = "y"
     while choice.lower() == "y":
         # get input from the user
-        monthly_investment = v.get_float("Enter monthly investment:\t",0, 1000)
-        yearly_interest_rate = v.get_float("Enter yearly interest rate:\t",0, 15)
-        years = v.get_int("Enter number of years:\t\t",0, 50)
+        monthly_investment = get_number("Enter monthly investment:\t", 0, 1000)
+        yearly_interest_rate = get_number("Enter yearly interest rate:\t", 0, 15)
+        years = get_integer("Enter number of years:\t\t", 0, 50)
 
         # get and display future value
         future_value = calculate_future_value(
             monthly_investment, yearly_interest_rate, years)
-
+        
+        print()
         print(f"Future value:\t\t\t{round(future_value, 2)}")
         print()
 
